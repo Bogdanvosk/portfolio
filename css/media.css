@@ -1,3 +1,11 @@
+@media (max-width:1100px){
+	.hero-avatar {
+		width: 320px;
+		height: 320px;
+		border-width: 10px;
+	}
+}
+
 @media (max-width:900px) {
 	.hero-content {
 		flex-direction: column;
@@ -21,29 +29,38 @@
 		padding-bottom: 100px;
 	}
 
+	.features-item {
+		flex-basis: 45%;
+	}
+
 	.section-title {
 		margin-bottom: 64px;
 	}
 
-	.contacts-form {
-		max-width: 350px;
+	.projects-slide{
+		flex-direction: column;
+	} 
+
+	.project-image{
+		margin-bottom: 46px;
 	}
 
-	.contacts-text {
-		flex-basis: 50%;
+	.contacts-block{
+		flex-direction: column;
+		align-items: flex-start;
 	}
 
-	.contacts-phone,
-	.contacts-mail {
-		flex-basis: 50%;
-		margin-bottom: 35px;
+	.contacts-form{
+		margin-bottom: 58px;
 	}
+
 }
 
-@media (max-width:630px) {
+@media (max-width:600px) {
 	.hero-avatar {
-		width: 240px;
-		height: 240px;
+		width: 220px;
+		height: 220px;
+		border-width: 7px;
 	}
 
 	.hero-subtitle {
@@ -72,10 +89,6 @@
 		flex-direction: column;
 	}
 
-	.features-text {
-		width: 50%;
-	}
-
 	.section {
 		padding: 64px 0px;
 	}
@@ -90,10 +103,7 @@
 
 	.contacts-block {
 		flex-direction: column;
-	}
-
-	footer {
-		text-align: center;
+		align-items: center;
 	}
 
 	footer .section-title {
@@ -235,6 +245,11 @@
 		max-width: 210px;
 	}
 
+	.project-time,
+	.project-cost {
+		flex-basis: 100%;
+	}
+
 	.contacts-block {
 		flex-direction: column;
 	}
@@ -253,26 +268,37 @@
 	}
 
 	.contacts-phone .contacts-title {
-		margin-top: 58px;
-	}
+		margin-top: 0;
+  }
 
 	.contacts-phone,
 	.contacts-mail {
 		margin-bottom: 35px;
 		flex-basis: 100%;
+		text-align: left;
+	}
+
+	.contacts-title{
+		font-size: 18px;
+		line-height: 21px;
 	}
 
 	.contacts-social {
 		display: flex;
 		flex-direction: column;
+		text-align: left;
 	}
 
 	.contacts-link {
 		margin-bottom: 13px;
+		font-size: 14px;
+		line-height: 16px;
+		
 	}
 
 	.contacts-policy {
 		margin-top: 26px;
+		text-align: left;
 	}
 
 	.form-button {
